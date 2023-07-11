@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.45;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+
+    height: 100px;
+    background: #2d6fd1;
+}
+header h1{
+    margin: 0 15px;
+    font-size: 28px;
+    text-align: left;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.button-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 15px;
+    position: relative;
+
+    min-width: 100px;
+    max-width: 300px;
+    width: auto;
+
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    text-align: right;
+    cursor: pointer;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    top: 35%;
+    transform: translate(-10%, +45%);
+    
+    border: blanchedalmond solid 1px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px black;
+    background: #2d6fd1;
+    text-align: center;
+    color: blanchedalmond;
+    
+    z-index: 1;
+}
+.configuration {
+    margin: 15px;
+    color: white;
+}
+.EXIT {
+    margin: 15px;
+    color: white;
+}
+
+/* aside */
+
+aside {
+    display: flex;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 2;
+}
+.menu {
+    display: none;
+    border-top: 7px ridge #49423d;
+    border-bottom: 7px ridge #49423d;
+    text-align: center;
+    background: #2d6fd1;
+    margin: 0;
+    padding: 0;
+}
+.menu-title {
+    margin: 0 10px 10px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.link {
+    margin: 15px 10px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+}
+
+aside a {
+	color: white;
+	text-decoration: none;
+}
+aside a:hover {
+    color: rgba(200, 200, 200, 0.6);
+}
+.button {
+    display: flex;
+    min-height: 500px;
+    max-height: 940px;
+    align-items: center;
+    background: #2d6fd1;
+    border-top: 7px ridge #49423d;
+    border-right: 7px ridge #bbbbbb;
+    border-bottom: 7px ridge #49423d;
+}
+
+/* article */
+
+article {
+    position: relative;
+    min-height: 700px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+    background-image: url(./../img/trava_gazon_zelenyj_121322_3840x2400.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.field_frame {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    background: white;
+    z-index: 1;
+}
+.frame {
+    position: relative;
+    padding-bottom: 30.25%;
+    min-height: 500px;
+    border: 3px solid #000000;
+}
+iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background: #2156A5;
+
+    text-align: center;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: block;
+}
+footer li {
+    padding: 3px;
+}
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+footer li a:hover {
+    color: rgb(63, 48, 48);
+}
+footer p {
+    margin: 50px auto 0;
+}
+
+/* media */
+
+@media screen and (max-width: 451px) and (min-width: 320px){
+    
+    /* header */
+
+    header{
+        position: relative;
+        height: 70px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+    .button-name {
+        font-size: 18px;
+    }
+    .submenu {
+        width: auto;
+        transform: translate(-10%, +80%);
+    }
+
+    /* aside */
+
+    aside {
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+    aside a:hover{
+        color: white;
+    }
+    .menu {
+        padding-top: 0;
+        padding-bottom: 10px;
+        margin: 0;
+        border-top: 7px ridge #49423d;
+        border-right: 7px ridge #49423d;
+        border-bottom: none;
+        border-left: 7px ridge #49423d;
+    }
+    .link:hover {
+        border: 2px dotted #000000;
+        box-shadow: 1px 1px 5px #000000, -1px -1px 5px #000000;
+    }
+    .button {
+        min-height: 0;
+        border-top: none;
+        border-right: 7px ridge #49423d;
+        border-bottom: 7px ridge #bbbbbb;
+        border-left: 7px ridge #49423d;
+    }
+    .button img {
+        margin: 0 auto;
+        transform: rotate(90deg);
+    }
+
+    /* article */
+    
+    article {
+        min-height: 0;
+        padding: 0;
+    }
+    .field_frame {
+        margin: 0;
+    }
+    .frame {
+        min-height: 700px;
+    }
+}

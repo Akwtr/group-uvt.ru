@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css-options/teachers.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./../Java-scripts/selected.js"></script>
+    <title>Учителя</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <select name="teachers" id="teachers">
+                <option value="t0">Выберите преподавателя</option>
+                <option value="t1">Холушкин В.С</option>
+                <option value="t2">Фролова Н.В.</option>
+                <option value="t4">Травова Н.Н.</option>
+                <option value="t3">Сизов Е.А.</option>
+                <option value="t5">Тулаева Н.В.</option>
+                <option value="t6">Щепелев А.А.</option>
+                <option value="t7">Говорунов Н.Н.</option>
+                <option value="t8">Скрыпник А.П.</option>
+                <option value="t9">Чередниченко И.Е.</option>
+                <option value="t10">Савченко О.В.</option>
+            </select>
+        </form>
+            <div id="t1" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Холушкин Владимир Семенович</td>
+                            <td>Вычислительной и информационной техники</td>
+                            <td>
+                                <ol>
+                                    <li>Алгоритмические языки</li>
+                                    <li>Технология программирования</li>
+                                    <li>Теория информационных процессов и систем</li>
+                                    <li>Программирование</li>
+                                    <li>Методы исследования и моделирования информационных процессов и технологий</li>
+                                    <li>Преддипломный курс (факультатив)</li>
+                                </ol>
+                            </td>
+                            <td rowspan="2">Кандидат физико-математических наук</td>
+                        </tr>
+                        <tr>
+                            <td>Факультет информационных технологий и электроники</td>
+                            <td>
+                                <ol>
+                                    <li>Руководство программой бакалавриата</li>
+                                    <li>Математика. Математический анализ</li>
+                                    <li>Руководство учебной практикой</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t4" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Травова Надежда Николаевна</td>
+                            <td>Вычислительной и информационной техники</td>
+                            <td>
+                                <ol>
+                                    <li>Информатика</li>
+                                    <li>основы информатики</li>
+                                    <li>Алгоритмические языки</li>
+                                    <li>Программирование</li>
+                                    <li>Программное обеспечение с открытым кодом</li>
+                                </ol>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t3" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Сизов Евгений Александрович</td>
+                            <td>Вычислительной и информационной техники</td>
+                            <td>Вычислительная математика</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t2" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Фролова Наталья Владимировна</td>
+                            <td>Вычислительной и информационной техники</td>
+                            <td>
+                                <ol>
+                                    <li>Математическое моделирование на высокопроизводительных параллельных вычислительных системах</li>
+                                    <li>Параллельное программирование</li>
+                                    <li>Программирование</li>
+                                    <li>Параллельные вычисления</li>
+                                    <li>Алгоритмические языки</li>
+                                    <li>Алгоритмы параллельных программ</li>
+                                </ol>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t5" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Тулаева Наталья Владимировна</td>
+                            <td>Иностранных языков</td>
+                            <td>Иностранный язык</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t6" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Щепелев Андрей Александрович</td>
+                            <td>Общей физики</td>
+                            <td>
+                                <ol>
+                                    <li>Общая физика</li>
+                                    <li>Физика</li>
+                                </ol>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t7" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Говорунов Николай Николаевич</td>
+                            <td>Общей физики</td>
+                            <td>
+                                <ol>
+                                    <li>Общая физика</li>
+                                    <li>Физика</li>
+                                    <li>Теория вероятностей и математическая статистика</li>
+                                </ol>
+                            </td>
+                            <td>Кандидат физико-математических наук</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t8" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Скрыпник Анатолий Петрович</td>
+                            <td>Философии и истории</td>
+                            <td>
+                                <ol>
+                                    <li>Культурология</li>
+                                    <li>История и философия науки и техники</li>
+                                    <li>Этика</li>
+                                    <li>Философия</li>
+                                </ol>
+                            </td>
+                            <td>Доктор философских наук</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t9" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Чередниченко Ильма Евгеньевна</td>
+                            <td>Высшей математики</td>
+                            <td>
+                                <ol>
+                                    <li>Математика. Аналитическая геометрия и линейная алгебра</li>
+                                    <li>Дифференциальные уравнения</li>
+                                    <li>Теория вероятностей и математическая статистика</li>
+                                </ol>
+                            </td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="t10" class="t" style="display: none;">
+                <table>
+                    <thead>
+                        <th>Ф.И.О. преподавателя</th>
+                        <th>Кафедра</th>
+                        <th>Перечень преподаваемых дисциплин</th>
+                        <th>Ученая степень</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Савченко Оксана Валерьевна</td>
+                            <td>Философии и истории</td>
+                            <td>
+                                <ol>
+                                    <li>Социология</li>
+                                    <li>История</li>
+                                </ol>
+                            </td>
+                            <td>Кандидат исторических наук</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</body>
+</html>

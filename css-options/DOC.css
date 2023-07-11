@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.45;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+
+    height: 100px;
+    background: #2d6fd1;
+}
+header h1{
+    margin: 0 15px;
+    font-size: 28px;
+    text-align: left;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.button-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 15px;
+    position: relative;
+
+    min-width: 100px;
+    max-width: 300px;
+    width: auto;
+
+    font-size: 26px;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    top: 35%;
+    transform: translate(-10%, +45%);
+    
+    border: blanchedalmond solid 1px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px black;
+    background: #2d6fd1;
+    color: blanchedalmond;
+    
+    z-index: 1;
+}
+.configuration {
+    margin: 15px;
+    color: white;
+}
+.EXIT {
+    margin: 15px;
+    color: white;
+}
+
+/* article */
+
+article {
+    position: relative;
+    min-height: 700px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+    background-image: url(./../img/trava_gazon_zelenyj_121322_3840x2400.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.menu {
+    padding: 16px;
+    max-width: 100%;
+    min-height: 600px;
+    background: #bbbbbb;
+    border: 1px solid #000;
+}
+.menu h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px 10px;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.DOC {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex-direction: 1;
+    justify-content: space-evenly;
+}
+.link {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.link:hover {
+    border: 1px dotted #000;
+    box-shadow: 3px 3px 15px #000, -3px -3px 15px #000;
+    transform: scale(1.15);
+}
+.link img {
+    margin: 10px;
+    width: calc(100%/2 - 10px);
+    height: calc(100%/2 - 10px);
+}
+.link p {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    color: rgba(3, 3, 12, 0.8);
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background: #2156A5;
+
+    text-align: center;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: block;
+}
+footer li {
+    padding: 3px;
+}
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+footer li a:hover {
+    color: rgb(63, 48, 48);
+}
+footer p {
+    margin: 50px auto 0;
+}
+
+/* media */
+
+@media screen and (max-width: 614px){
+    
+    /* header */
+
+    header{
+        position: relative;
+        height: 70px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+    .button-name {
+        font-size: 18px;
+    }
+    .submenu {
+        width: auto;
+        transform: translate(-10%, +45%);
+    }
+
+    /* article */
+    
+    article {
+        min-height: 0;
+        padding: 0;
+    }
+    .menu {
+        padding-top: 0;
+        padding-bottom: 10px;
+        margin: 0;
+        border-top: 7px ridge #49423d;
+        border-bottom: 7px ridge #49423d;
+    }
+    .menu h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+    .link {
+        width: 150px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        transition: none;
+    }
+    .link:hover{
+        border: none;
+        transform: scale(1);
+        box-shadow: none;
+    }
+    .link img {
+        width: 50px;
+        height: 55px;
+    }
+}
+@media screen and (max-width: 412px) and (min-width: 320px) {
+
+    /* article */
+
+    .link {
+        width: 120px;
+    }
+    .link p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.45;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+
+    height: 100px;
+    background: #2d6fd1;
+}
+header h1{
+    margin: 0 15px;
+    font-size: 28px;
+    text-align: left;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+.button-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 15px;
+    position: relative;
+
+    min-width: 100px;
+    max-width: 300px;
+    width: auto;
+
+    font-size: 26px;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 15px;
+    top: 35%;
+    transform: translate(-10%, +45%);
+    
+    border: blanchedalmond solid 1px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px black;
+    background: #2d6fd1;
+    color: blanchedalmond;
+    
+    z-index: 1;
+}
+.configuration {
+    margin: 15px;
+    color: white;
+}
+.EXIT {
+    margin: 15px;
+    color: white;
+}
+
+/* article */
+
+article {
+    position: relative;
+    min-height: 700px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    
+    background-image: url(./../img/trava_gazon_zelenyj_121322_3840x2400.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.menu {
+    padding: 16px;
+    max-width: 100%;
+    min-height: 600px;
+    background: #bbbbbb;
+    border: 1px solid #000;
+}
+.menu h2 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin: 10px 10px 0;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.menu-undertitle {
+    margin: 0 10px 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.quest {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+td {
+    border: 3px double black;
+    background: white;
+}
+ol {
+    margin: 0;
+    padding-left: 20px;
+}
+.link {
+    color: #0645ad;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background: #2156A5;
+
+    text-align: center;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer ul li {
+    display: block;
+}
+footer li {
+    padding: 3px;
+}
+footer li a {
+    text-decoration: none;
+    color: black;
+}
+footer li a:hover {
+    color: rgb(63, 48, 48);
+}
+footer p {
+    margin: 50px auto 0;
+}
+
+/* media */
+
+@media screen and (max-width: 451px) and (min-width: 320px){
+    
+    /* header */
+
+    header{
+        position: relative;
+        height: 70px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+    .button-name {
+        font-size: 18px;
+    }
+    .submenu {
+        width: auto;
+        transform: translate(-10%, +80%);
+    }
+    
+    /* article */
+
+    article {
+        min-height: 0;
+        padding: 0;
+    }
+    table {
+        font-size: 0.93rem;
+    }
+}
